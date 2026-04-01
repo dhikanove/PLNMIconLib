@@ -1,0 +1,19 @@
+# Source files — not needed in published package
+src/
+public/
+index.html
+
+# Config files
+vite.config.ts
+tsconfig*.json
+tsconfig*.tsbuildinfo
+.env*
+.DS_Store
+
+# Dev artifacts
+node_modules/
+__MACOSX/
+
+# Misc
+*.log
+ICON_LIBRARY_README.md
