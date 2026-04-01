@@ -50,15 +50,15 @@ import { Icon } from '@dhikanove/plnm-icon-lib'
 
 ## Props
 
-| Prop      | Type                 | Default          | Description                                    |
-| --------- | -------------------- | ---------------- | ---------------------------------------------- |
-| `name`    | `IconName \| string` | —                | Name of a registered icon                      |
-| `size`    | `number \| string`   | `24`             | Width & height. Number = px; string = any unit |
-| `color`   | `string`             | `'currentColor'` | Fill color applied to all paths                |
-| `colors`  | `string[]`           | —                | Array of colors applied to paths in order      |
-| `url`     | `string`             | —                | URL of an external SVG to load at runtime      |
-| `viewBox` | `string`             | auto-detected    | Override the SVG viewBox attribute             |
-| `class`   | `string`             | —                | Extra CSS class on the wrapper element         |
+| Prop      | Type               | Default          | Description                                    |
+| --------- | ------------------ | ---------------- | ---------------------------------------------- |
+| `name`    | `IconName | string` | —                | Name of a registered icon                      |
+| `size`    | `number | string`  | `24`             | Width & height. Number = px; string = any unit |
+| `color`   | `string`           | `'currentColor'` | Fill color applied to all paths                |
+| `colors`  | `string[]`         | —                | Array of colors applied to paths in order      |
+| `url`     | `string`           | —                | URL of an external SVG to load at runtime      |
+| `viewBox` | `string`           | auto-detected    | Override the SVG viewBox attribute             |
+| `class`   | `string`           | —                | Extra CSS class on the wrapper element         |
 
 ## Examples
 
