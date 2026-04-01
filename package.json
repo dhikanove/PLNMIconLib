@@ -24,9 +24,9 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.cjs"
     }
   },
   "files": [
@@ -37,10 +37,11 @@
   "sideEffects": false,
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build --mode lib",
-    "build-demo": "vite build",
+    "build": "vue-tsc -b && vite build --mode lib --config vite.config.ts",
+    "build-demo": "vite build --config vite.demo.config.ts",
     "prepublishOnly": "npm run build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preview-demo": "vite preview --config vite.demo.config.ts"
   },
   "peerDependencies": {
     "vue": "^3.3.0"
