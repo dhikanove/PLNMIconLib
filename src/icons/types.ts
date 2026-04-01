@@ -1,4 +1,4 @@
-import {iconRegistry} from "./registry";
+import {listIconName} from "./icon.names.type";
 
 export interface IconProps {
   name?: string | IconName
@@ -10,8 +10,7 @@ export interface IconProps {
   class?: string
 }
 
-export type IconName = keyof typeof iconRegistry
-export const ICONS = Object.keys(iconRegistry) as IconName[]
+export type IconName = listIconName
 export interface IconRegistry {
   [key: string]: string
 }

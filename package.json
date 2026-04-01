@@ -38,10 +38,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build --config vite.config.ts",
-    "build-demo": "vite build --config vite.demo.config.ts",
+    "build:demo": "vite build --config vite.demo.config.ts",
     "prepublishOnly": "npm run build",
     "preview": "vite preview",
-    "preview-demo": "vite preview --config vite.demo.config.ts"
+    "preview:demo": "vite preview --config vite.demo.config.ts",
+    "generate:icons-type": "npx tsx scripts/generate-icon-type.ts"
   },
   "peerDependencies": {
     "vue": "^3.5.0"
