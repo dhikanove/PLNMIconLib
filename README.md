@@ -1,4 +1,4 @@
-# @dhikanove/plnm-icon-lib
+# PLN Mobile Icons
 
 > Vue 3 SVG icon library — 155+ custom icons with TypeScript support, color customization, and URL loading.
 

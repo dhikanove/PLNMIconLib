@@ -1,6 +1,6 @@
 {
-  "name": "@dhikanove/plnm-icon-lib",
-  "version": "1.0.7",
+  "name": "@dhikanove/pln-mobile-icons",
+  "version": "1.0.0",
   "description": "Vue 3 SVG icon library for PLNM — 150+ icons with TypeScript support",
   "homepage": "https://dhikanove.github.io/PLNMIconLib/",
   "keywords": [
@@ -31,7 +31,6 @@
   },
   "files": [
     "dist",
-    "README.md",
     "LICENSE"
   ],
   "sideEffects": false,
