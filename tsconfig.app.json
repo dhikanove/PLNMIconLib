@@ -16,6 +16,7 @@
     "declarationDir": "dist",
     "emitDeclarationOnly": false,
     "jsx": "preserve",
+    "types": ["node", "vite/client"],
 
     /* Linting */
     "strict": true,
@@ -23,5 +24,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"]
 }

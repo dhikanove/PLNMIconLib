@@ -1,1 +1,1 @@
-{"root":["./src/main.ts","./src/vite-env.d.ts","./src/icons/index.ts","./src/icons/registry.ts","./src/icons/types.ts","./src/icons/utils.ts","./src/app.vue","./src/components/helloworld.vue","./src/icons/icon.vue"],"version":"5.9.3"}
+{"root":["./src/app.vue","./src/index.ts","./src/main.ts","./src/components/helloworld.vue","./src/icons/icon.vue","./src/icons/index.ts","./src/icons/registry.ts","./src/icons/types.ts","./src/icons/utils.ts"],"version":"5.9.3"}

@@ -1,25 +1,26 @@
 <template>
   <span
-    :class="['v-icon', props.class]"
-    :style="iconStyle"
-    v-html="processedSvg"
-    v-if="!$slots.default && processedSvg"
+      :class="['v-icon', $props.class]"
+      :style="iconStyle"
+      v-html="processedSvg"
+      v-if="!$slots.default && processedSvg"
   ></span>
   <span
-    v-else-if="$slots.default"
-    :class="['v-icon', props.class]"
-    :style="iconStyle"
+      v-else-if="$slots.default"
+      :class="['v-icon', $props.class]"
+      :style="iconStyle"
   >
     <slot></slot>
   </span>
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch, onMounted } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { getIcon } from './registry'
 import { processSvgContent, extractViewBox, getSvgSize, loadSvgFromUrl } from './utils'
 import type { IconProps } from './types'
 
+// withDefaults dan defineProps otomatis mengekspos variabel ke template
 const props = withDefaults(defineProps<IconProps>(), {
   size: 24,
   color: 'currentColor',
@@ -35,6 +36,7 @@ const iconStyle = computed(() => {
     justifyContent: 'center',
     width: size,
     height: size,
+    // Perbaikan typo opsional: pastikan di IconProps adalah 'colors' (jamak)
     color: props.colors ? undefined : props.color,
   }
 })
@@ -62,28 +64,22 @@ const processedSvg = computed(() => {
 })
 
 async function loadUrlIcon() {
-  console.log('loadUrlIcon', props.url)
-  if (props.url) {
-    try {
-      urlSvgContent.value = await loadSvgFromUrl(props.url)
-    } catch (error) {
-      console.error('Failed to load icon from URL:', error)
-      urlSvgContent.value = ''
-    }
+  if (!props.url) return // Guard clause simpel
+
+  try {
+    urlSvgContent.value = await loadSvgFromUrl(props.url)
+  } catch (error) {
+    console.error('Failed to load icon from URL:', error)
+    urlSvgContent.value = ''
   }
 }
 
+// Watcher dengan immediate: true sudah mencakup lifecycle mounted!
+// Anda bisa menghapus hook onMounted di bawah agar tidak fetch 2x saat inisialisasi.
 watch(() => props.url, () => {
-  if (props.url) {
-    loadUrlIcon()
-  }
+  loadUrlIcon()
 }, { immediate: true })
 
-onMounted(() => {
-  if (props.url) {
-    loadUrlIcon()
-  }
-})
 </script>
 
 <style scoped>
