@@ -37,7 +37,7 @@
   "sideEffects": false,
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build --mode lib --config vite.config.ts",
+    "build": "vue-tsc -p tsconfig.build.json && vite build --mode lib --config vite.config.ts",
     "build-demo": "vite build --config vite.demo.config.ts",
     "prepublishOnly": "npm run build",
     "preview": "vite preview",
