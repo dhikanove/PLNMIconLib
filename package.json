@@ -37,7 +37,8 @@
   "sideEffects": false,
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build": "vue-tsc -b && vite build --mode lib",
+    "build-demo": "vite build",
     "prepublishOnly": "npm run build",
     "preview": "vite preview"
   },
