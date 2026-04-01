@@ -2,6 +2,8 @@
 
 > Vue 3 SVG icon library — 155+ custom icons with TypeScript support, color customization, and URL loading.
 
+## Documentation
+> https://dhikanove.github.io/PLNMIconLib/
 ## Features
 
 - **155+ SVG icons** — ready to use out of the box
