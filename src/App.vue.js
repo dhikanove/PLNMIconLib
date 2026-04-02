@@ -289,7 +289,7 @@ const __VLS_18 = __VLS_17({
 }, ...__VLS_functionalComponentArgsRest(__VLS_17));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)({
     ...{ onClick: (...[$event]) => {
-            __VLS_ctx.copyToClipboard($event, 'npm install @dhikanove/plnm-icon-lib\nnpm install vue');
+            __VLS_ctx.copyToClipboard($event, 'npm install @dhikanove/pln-mobile-icons');
         } },
     ...{ class: "copy-btn" },
 });
@@ -351,7 +351,7 @@ const __VLS_22 = __VLS_21({
 }, ...__VLS_functionalComponentArgsRest(__VLS_21));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)({
     ...{ onClick: (...[$event]) => {
-            __VLS_ctx.copyToClipboard($event, 'import { createApp } from \'vue\'\nimport App from \'./App.vue\'\nimport { Icon } from \'@dhikanove/plnm-icon-lib\'\n\nconst app = createApp(App)\napp.component(\'Icon\', Icon)\napp.mount(\'#app\')');
+            __VLS_ctx.copyToClipboard($event, 'import { createApp } from \'vue\'\nimport App from \'./App.vue\'\nimport { Icon } from \'@dhikanove/pln-mobile-icons\'\n\nconst app = createApp(App)\napp.component(\'Icon\', Icon)\napp.mount(\'#app\')');
         } },
     ...{ class: "copy-btn" },
 });
@@ -425,7 +425,7 @@ const __VLS_26 = __VLS_25({
 }, ...__VLS_functionalComponentArgsRest(__VLS_25));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)({
     ...{ onClick: (...[$event]) => {
-            __VLS_ctx.copyToClipboard($event, '<script setup lang=\'ts\'>\nimport { Icon } from \'@dhikanove/plnm-icon-lib\'\n</script>\n\n<template>\n  <Icon name=\'home\' />\n</template>');
+            __VLS_ctx.copyToClipboard($event, '<script setup lang=\'ts\'>\nimport { Icon } from \'@dhikanove/pln-mobile-icons\'\n</script>\n\n<template>\n  <Icon name=\'home\' />\n</template>');
         } },
     ...{ class: "copy-btn" },
 });
@@ -1234,7 +1234,7 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(
     target: "_blank",
 });
 __VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)({
-    href: "https://www.npmjs.com/package/@dhikanove/plnm-icon-lib",
+    href: "https://www.npmjs.com/package/@dhikanove/pln-mobile-icons",
     target: "_blank",
 });
 /** @type {__VLS_StyleScopedClasses['layout']} */ ;
