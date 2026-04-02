@@ -80,7 +80,7 @@ onUnmounted(() => {
   <div class="layout">
     <aside>
       <div class="sidebar-logo">
-        <div class="lib-name">@dhikanove<span>/plnm-icon-lib</span></div>
+        <div class="lib-name">@dhikanove<span>/pln-mobile-icons</span></div>
         <div class="version">v1.0 · {{ICONS.length}} icons</div>
       </div>
       <nav class="sidebar-nav">
@@ -102,7 +102,7 @@ onUnmounted(() => {
       <div class="hero" id="hero">
         <div class="hero-badge">
           <div class="dot-green"></div>
-          @dhikanove/plnm-icon-lib
+          @dhikanove/pln-mobile-icons
         </div>
         <h1>PLN Mobile Icon Library<br><span>for Vue 3</span></h1>
         <p>{{ICONS.length}} SVG ikon siap pakai dengan TypeScript support, custom color, dan bisa load dari URL — ringan, tree-shakeable, dan mudah dipakai.</p>
@@ -132,11 +132,11 @@ onUnmounted(() => {
             <div class="code-label">
               <Icon name="docs" :size="13" /> terminal
             </div>
-            <button class="copy-btn" @click="copyToClipboard($event, 'npm install @dhikanove/plnm-icon-lib\nnpm install vue')">Salin</button>
+            <button class="copy-btn" @click="copyToClipboard($event, 'npm install @dhikanove/pln-mobile-icons')">Salin</button>
           </div>
           <pre>
 <span class="cm"># Install library</span>
-<span class="fn">npm</span> install @dhikanove/plnm-icon-lib
+<span class="fn">npm</span> install @dhikanove/pln-mobile-icons
           </pre>
         </div>
       </section>
@@ -157,11 +157,11 @@ onUnmounted(() => {
               <div class="code-label">
                 <Icon name="document" :size="13" /> main.ts
               </div>
-              <button class="copy-btn" @click="copyToClipboard($event, 'import { createApp } from \'vue\'\nimport App from \'./App.vue\'\nimport { Icon } from \'@dhikanove/plnm-icon-lib\'\n\nconst app = createApp(App)\napp.component(\'Icon\', Icon)\napp.mount(\'#app\')')">Salin</button>
+              <button class="copy-btn" @click="copyToClipboard($event, 'import { createApp } from \'vue\'\nimport App from \'./App.vue\'\nimport { Icon } from \'@dhikanove/pln-mobile-icons\'\n\nconst app = createApp(App)\napp.component(\'Icon\', Icon)\napp.mount(\'#app\')')">Salin</button>
             </div>
             <pre><span class="kw">import</span> { createApp } <span class="kw">from</span> <span class="str">'vue'</span>
 <span class="kw">import</span> App <span class="kw">from</span> <span class="str">'./App.vue'</span>
-<span class="kw">import</span> { Icon } <span class="kw">from</span> <span class="str">'@dhikanove/plnm-icon-lib'</span>
+<span class="kw">import</span> { Icon } <span class="kw">from</span> <span class="str">'@dhikanove/pln-mobile-icons'</span>
 
 <span class="kw">const</span> app = <span class="fn">createApp</span>(App)
 app.<span class="fn">component</span>(<span class="str">'Icon'</span>, Icon)
@@ -175,10 +175,10 @@ app.<span class="fn">mount</span>(<span class="str">'#app'</span>)</pre>
               <div class="code-label">
                 <Icon name="document" :size="13" /> MyComponent.vue
               </div>
-              <button class="copy-btn" @click="copyToClipboard($event, '<script setup lang=\'ts\'>\nimport { Icon } from \'@dhikanove/plnm-icon-lib\'\n</script>\n\n<template>\n  <Icon name=\'home\' />\n</template>')">Salin</button>
+              <button class="copy-btn" @click="copyToClipboard($event, '<script setup lang=\'ts\'>\nimport { Icon } from \'@dhikanove/pln-mobile-icons\'\n</script>\n\n<template>\n  <Icon name=\'home\' />\n</template>')">Salin</button>
             </div>
             <pre><span class="tag">&lt;script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="val">"ts"</span><span class="tag">&gt;</span>
-<span class="kw">import</span> { Icon } <span class="kw">from</span> <span class="str">'@dhikanove/plnm-icon-lib'</span>
+<span class="kw">import</span> { Icon } <span class="kw">from</span> <span class="str">'@dhikanove/pln-mobile-icons'</span>
 <span class="tag">&lt;/script&gt;</span>
 
 <span class="tag">&lt;template&gt;</span>
@@ -334,7 +334,7 @@ app.<span class="fn">mount</span>(<span class="str">'#app'</span>)</pre>
             </div>
             <button class="copy-btn" @click="copyToClipboard($event,'')">Salin</button>
           </div>
-          <pre><span class="kw">import</span> { registerIcon } <span class="kw">from</span> <span class="str">'@dhikanove/plnm-icon-lib'</span>
+          <pre><span class="kw">import</span> { registerIcon } <span class="kw">from</span> <span class="str">'@dhikanove/pln-mobile-icons'</span>
 
 <span class="cm">// Daftarkan ikon custom</span>
 <span class="fn">registerIcon</span>(
@@ -428,11 +428,11 @@ app.<span class="fn">mount</span>(<span class="str">'#app'</span>)</pre>
 
       <div class="footer">
         <div>
-          <span class="mono">@dhikanove/plnm-icon-lib</span> · MIT License · © dhikanove
+          <span class="mono">@dhikanove/pln-mobile-icons</span> · MIT License · © dhikanove
         </div>
         <div>
           Dibuat dengan <a href="https://vuejs.org" target="_blank">Vue 3</a> ·
-          <a href="https://www.npmjs.com/package/@dhikanove/plnm-icon-lib" target="_blank">npm</a>
+          <a href="https://www.npmjs.com/package/@dhikanove/pln-mobile-icons" target="_blank">npm</a>
         </div>
       </div>
     </main>
