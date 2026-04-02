@@ -18,7 +18,7 @@
 ## Installation
 
 ```bash
-npm install @dhikanove/plnm-icon-lib
+npm install @dhikanove/pln-mobile-icons
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ npm install @dhikanove/plnm-icon-lib
 // main.ts
 import { createApp } from 'vue'
 import App from './App.vue'
-import { Icon } from '@dhikanove/plnm-icon-lib'
+import { Icon } from '@dhikanove/pln-mobile-icons'
 
 const app = createApp(App)
 app.component('Icon', Icon)
@@ -40,7 +40,7 @@ app.mount('#app')
 
 ```vue
 <script setup lang="ts">
-import { Icon } from '@dhikanove/plnm-icon-lib'
+import { Icon } from '@dhikanove/pln-mobile-icons'
 </script>
 
 <template>
@@ -90,7 +90,7 @@ import { Icon } from '@dhikanove/plnm-icon-lib'
 ## Advanced: Register custom icons
 
 ```ts
-import { registerIcon } from '@dhikanove/plnm-icon-lib'
+import { registerIcon } from '@dhikanove/pln-mobile-icons'
 
 registerIcon('my-icon', '<svg viewBox="0 0 24 24">...</svg>')
 ```
